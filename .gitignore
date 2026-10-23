@@ -1,0 +1,66 @@
+# ==========================================
+# Maven & Java Build Artifacts
+# ==========================================
+target/
+**/target/
+*.class
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Ignore downloaded OpenTelemetry Java Agent binary (keep repo lightweight)
+opentelemetry-javaagent.jar
+**/opentelemetry-javaagent*.jar
+
+# ==========================================
+# Secrets, API Keys & Local Configs (CRITICAL)
+# ==========================================
+.env
+.env.*
+*.env
+application-local.yml
+application-local.properties
+application-secret.yml
+application-secret.properties
+
+# ==========================================
+# Python Evaluation Harness Cache & Envs
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.pytest_cache/
+
+# ==========================================
+# IDEs & Editors (IntelliJ, VS Code, Eclipse)
+# ==========================================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.vscode/
+.settings/
+.classpath
+.project
+
+# ==========================================
+# OS & Runtime Logs
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+*.log
+logs/
+*.tmp
