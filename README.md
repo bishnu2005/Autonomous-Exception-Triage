@@ -20,9 +20,9 @@ flowchart LR
 mvn clean package
 ```
 
-## Run receiver
+## Run receiver after setting your llm api key for personal preferences update the application.properties file according to your needs
 ```bash
-export OPENROUTER_API_KEY=sk-or-...
+
 cd receiver && mvn spring-boot:run
 ```
 
