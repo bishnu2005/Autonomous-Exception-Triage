@@ -39,7 +39,7 @@ java -javaagent:otel-extension/lib/opentelemetry-javaagent.jar \
   -jar sample-app/target/sample-app-1.0.0.jar
 ```
 
-Optional:
+Optional: for faster responses use a open ai model or grok
 ```bash
 export OTEL_TRIAGE_RECEIVER_URL=http://localhost:8081/api/telemetry/events
 export OPENROUTER_MODEL=qwen/qwen-2.5-coder-32b-instruct
